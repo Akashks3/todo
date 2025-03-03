@@ -11,7 +11,7 @@ function App() {
 
   
   useEffect(() => {
-    fetch("http://localhost:5000/api/todos")
+    fetch("/api/todos")
       .then((response) => response.json())
       .then((data) => setInputValue(data));
   }, []);
@@ -32,7 +32,7 @@ function App() {
 
     if (editIndex === -1) {
       // Create a new Todo
-      fetch("http://localhost:5000/api/todos", {
+      fetch("https://todobackend-pkhl.onrender.com/api/todos", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +48,7 @@ function App() {
     } else {
       // Update an existing Todo
       const todoId = inputValue[editIndex]._id;
-      fetch(`http://localhost:5000/api/todos/${todoId}`, {
+      fetch(`https://todobackend-pkhl.onrender.com/api/todos/${todoId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -80,7 +80,7 @@ function App() {
 
   const DeleteItem = (index) => {
     const todoId = inputValue[index]._id;
-    fetch(`http://localhost:5000/api/todos/${todoId}`, {
+    fetch(`https://todobackend-pkhl.onrender.com/todos/${todoId}`, {
       method: "DELETE",
     }).then(() => {
       const filteredItems = [...inputValue];
