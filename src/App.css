@@ -1,0 +1,93 @@
+.App {
+  margin: 0%;
+  margin-top: 10%;
+  text-align: center;
+  justify-content: center;
+  color: hwb(140 11% 51%);
+  align-items: center;
+}
+
+.add {
+  color: aliceblue;
+  background-color: hwb(120 48% 31%);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input {
+  width: 30%;
+  padding: 10px;
+  border: 2px solid #77b377;
+  border-radius: 5px;
+
+}
+
+.card {
+  margin: 2%;
+  text-align: start;
+}
+
+.cards {
+  margin: 2%;
+  width: 30%;
+  box-sizing: content-box;
+  padding: 3%;
+  height: 30%;
+  background-color: hsl(120, 100%, 87%);
+
+}
+
+.card-body {
+  text-align: left;
+  margin: 2%;
+  gap: 2rem;
+  display: flex;
+}
+
+h4 {
+  text-align: start;
+  padding: 20px;
+}
+
+#edit {
+  color: aliceblue;
+  background-color: #77b377;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: end;
+  margin: 2%;
+}
+
+.container {
+  align-items: end;
+}
+
+button {
+  color: aliceblue;
+  background-color: #ff8787;
+  border: none;
+}
+
+#delete {
+  color: aliceblue;
+  background-color: rgb(255, 149, 149);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.first {
+  text-align: start;
+  display: flex;
+  gap: 49rem;
+  margin: 2%;
+}
+
+.drop {
+  background-color: #ff8787;
+  color: aliceblue;
+  padding: 10px;
+  border: none;
+}
